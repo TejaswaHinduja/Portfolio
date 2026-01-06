@@ -19,18 +19,6 @@ export const MAIN_NAV: NavItem[] = [
     title: "Portfolio",
     href: "/",
   },
-  {
-    title: "Components",
-    href: "/components",
-  },
-  {
-    title: "Blog",
-    href: "/blog",
-  },
-  // {
-  //   title: "Sponsors",
-  //   href: "/sponsors",
-  // },
 ];
 
 export const GITHUB_USERNAME = "ncdai";

@@ -37,7 +37,6 @@ import {
   CommandItem,
   CommandList,
 } from "@/components/ui/command";
-import type { Post } from "@/features/blog/types/post";
 import { SOCIAL_LINKS } from "@/features/portfolio/data/social-links";
 import { useSound } from "@/hooks/use-sound";
 import { trackEvent } from "@/lib/events";
@@ -65,16 +64,6 @@ const MENU_LINKS: CommandLinkItem[] = [
     title: "Portfolio",
     href: "/",
     icon: ChanhDaiMark,
-  },
-  {
-    title: "Components",
-    href: "/components",
-    icon: Icons.react,
-  },
-  {
-    title: "Blog",
-    href: "/blog",
-    icon: RssIcon,
   },
 ];
 
@@ -135,25 +124,14 @@ const SOCIAL_LINK_ITEMS: CommandLinkItem[] = SOCIAL_LINKS.map((item) => ({
 
 const OTHER_LINK_ITEMS: CommandLinkItem[] = [
   {
-    title: "Sponsors",
-    href: "/sponsors",
-    icon: HeartIcon,
-  },
-  {
     title: "llms.txt",
     href: "/llms.txt",
     icon: FileTextIcon,
     openInNewTab: true,
   },
-  {
-    title: "RSS Feed",
-    href: "/rss",
-    icon: RssIcon,
-    openInNewTab: true,
-  },
 ];
 
-export function CommandMenu({ posts }: { posts: Post[] }) {
+export function CommandMenu() {
   const router = useRouter();
 
   const { setTheme, resolvedTheme } = useTheme();
@@ -241,23 +219,6 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
     [playClick, setTheme]
   );
 
-  const { componentLinks, blogLinks } = useMemo(
-    () => ({
-      componentLinks: posts
-        .filter((post) => post.metadata?.category === "components")
-        .sort((a, b) =>
-          a.metadata.title.localeCompare(b.metadata.title, "en", {
-            sensitivity: "base",
-          })
-        )
-        .map(postToCommandLinkItem),
-      blogLinks: posts
-        .filter((post) => post.metadata?.category !== "components")
-        .map(postToCommandLinkItem),
-    }),
-    [posts]
-  );
-
   return (
     <>
       <Button
@@ -309,20 +270,6 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
           />
 
           <CommandLinkGroup
-            heading="Components"
-            links={componentLinks}
-            fallbackIcon={Icons.react}
-            onLinkSelect={handleOpenLink}
-          />
-
-          <CommandLinkGroup
-            heading="Blog"
-            links={blogLinks}
-            fallbackIcon={TextIcon}
-            onLinkSelect={handleOpenLink}
-          />
-
-          <CommandLinkGroup
             heading="Social Links"
             links={SOCIAL_LINK_ITEMS}
             onLinkSelect={handleOpenLink}
@@ -351,13 +298,6 @@ export function CommandMenu({ posts }: { posts: Post[] }) {
             >
               <TypeIcon />
               Copy Logotype as SVG
-            </CommandItem>
-
-            <CommandItem
-              onSelect={() => handleOpenLink("/blog/chanhdai-brand")}
-            >
-              <TriangleDashedIcon />
-              Brand Guidelines
             </CommandItem>
 
             <CommandItem asChild>
@@ -547,21 +487,4 @@ function CommandMenuFooter() {
       </div>
     </>
   );
-}
-
-function postToCommandLinkItem(post: Post): CommandLinkItem {
-  const isComponent = post.metadata?.category === "components";
-
-  const IconComponent = isComponent
-    ? (props: LucideProps) => (
-        <ComponentIcon {...props} variant={post.metadata.icon} />
-      )
-    : undefined;
-
-  return {
-    title: post.metadata.title,
-    href: isComponent ? `/components/${post.slug}` : `/blog/${post.slug}`,
-    keywords: isComponent ? ["component"] : undefined,
-    icon: IconComponent,
-  };
 }
