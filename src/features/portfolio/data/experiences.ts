@@ -14,13 +14,11 @@ export const EXPERIENCES: Experience[] = [
         },
         employmentType: "Intern",
         icon: "code",
-        description: `- Develop [AI Chat](https://help.simplamo.com/features/simplamo-ai/ai-chat/guide_simplamo_ai_chat?ref=IN-926722) and [AI Assistant](https://help.simplamo.com/features/simplamo-ai/ai-expert/aiexpert-rockdiscribe?ref=IN-926722) features.
-- Develop [Whiteboards](https://help.simplamo.com/features/whiteboard/overview?ref=IN-926722) with real-time collaboration.
-- Build and maintain the [Zalo Mini App](https://zalo.me/s/1736112917405511258/) for Simplamo with seamless integration.
-- Develop interactive chart and analytics widgets for the [Dashboard](https://help.simplamo.com/features/dashboard/overview) to enhance data visualization.
+        description: `- Develop Authentication and Onboarding flow for the sellers.
+- Develop interactive chart and analytics widgets for the [Dashboard] to enhance data visualization.
 - Develop and maintain core features to enhance functionality and user experience.
 - Ensure UI/UX consistency and adherence to standards.
-- Implement robust frontend solutions for web and mobile platforms.
+- Implement robust frontend solutions for web platform.
 - Analyze technical capabilities and provide optimal solutions.`,
         skills: [
           "TypeScript",
@@ -29,8 +27,6 @@ export const EXPERIENCES: Experience[] = [
           "MobX",
           "MobX-State-Tree",
           "Tailwind CSS",
-          "Dify",
-          "Zalo Mini App",
           "Agile",
           "Teamwork",
           "Research",

@@ -1,12 +1,12 @@
 import { unstable_cache } from "next/cache";
 
 import type { Activity } from "@/components/kibo-ui/contribution-graph";
-import { GITHUB_USERNAME } from "@/config/site";
+//import { GITHUB_USERNAME } from "@/config/site";
 
 type GitHubContributionsResponse = {
   contributions: Activity[];
 };
-
+const GITHUB_USERNAME = "TejaswaHinduja";
 export const getGitHubContributions = unstable_cache(
   async () => {
     const res = await fetch(
