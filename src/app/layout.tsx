@@ -76,23 +76,7 @@ export const metadata: Metadata = {
     creator: "@iamncdai", // Twitter username
     images: [SITE_INFO.ogImage],
   },
-  icons: {
-    icon: [
-      {
-        url: "https://assets.chanhdai.com/images/favicon.ico",
-        sizes: "any",
-      },
-      {
-        url: "https://assets.chanhdai.com/images/favicon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: {
-      url: "https://assets.chanhdai.com/images/apple-touch-icon.png",
-      type: "image/png",
-      sizes: "180x180",
-    },
-  },
+  // Icons are handled by icon.tsx file in the app directory
 };
 
 export const viewport: Viewport = {

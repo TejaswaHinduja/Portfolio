@@ -48,6 +48,7 @@ export const PROJECTS: Project[] = [
     description:
       "It is an AI powered Twitter bot, Helps Users in crafting their raw thoughts into well crafted tweets",
     logo: "https://assets.chanhdai.com/images/project-logos/chanhdaidotcom.svg",
+    isExpanded: true,
   },
   {
     id: "WeChat",
@@ -57,6 +58,9 @@ export const PROJECTS: Project[] = [
     },
     link: "https://wechat-kcq8.onrender.com/",
     skills: ["React", "Tailwind CSS v4", "shadcn/ui", "NodeJs", "Express"],
+    description:
+      "A real-time chat application built with React and Node.js. Features include instant messaging, user authentication, and responsive design for seamless communication across devices.",
     logo: "https://assets.chanhdai.com/images/project-logos/quaricdotcom.svg",
+    isExpanded: true,
   },
 ];
