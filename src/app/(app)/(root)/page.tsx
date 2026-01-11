@@ -28,7 +28,6 @@ export default function Page() {
       />
 
       <div className="mx-auto md:max-w-3xl *:[[id]]:scroll-mt-22">
-        <ProfileCover />
         <ProfileHeader />
         <Separator />
 
@@ -39,9 +38,6 @@ export default function Page() {
         <Separator />
 
         <About />
-        <Separator />
-
-        <TestimonialsMarquee />
         <Separator />
 
         <GitHubContributions />
@@ -56,16 +52,7 @@ export default function Page() {
         <Projects />
         <Separator />
 
-        <Awards />
-        <Separator />
-
         <Certifications />
-        <Separator />
-
-        <Bookmarks />
-        <Separator />
-
-        <Brand />
         <Separator />
       </div>
     </>

@@ -16,13 +16,13 @@ export const USER = {
   jobTitle: "Engineer",
   jobs: [
     {
-      title: "Frontend Developer Intern",
-      company: "Sponsogram",
-      website: "https://www.sponsogram.in/",
+      title: "Full Stack Developer ",
+      company: "",
+      website: "",
     },
   ],
   about: `
-Hello, World! I am Tejaswa Hinduja — a Design Engineer passionate about creating high-performance, user-centric software solutions.
+Hello, World! I am Tejaswa Hinduja — a Engineer passionate about creating high-performance, user-centric software solutions.
 
 I specialize in building high-quality web apps using Next.js, React, TypeScript, Express, NodeJs, FastAPI and other modern technologies. Beyond work, I love exploring new technologies and turning ideas into reality through personal projects.
 
@@ -40,6 +40,7 @@ Let's connect and collaborate!
     "tejcodes",
     "tej",
     "frontend developer",
+    "backend developer",
     "web developer",
     "react developer",
     "nextjs developer",
