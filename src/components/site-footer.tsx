@@ -13,7 +13,7 @@ export function SiteFooter() {
           Built by{" "}
           <a
             className="link"
-            href="https://x.com/iamncdai"
+            href="https://x.com/Tej_Codes"
             target="_blank"
             rel="noopener"
           >
@@ -35,7 +35,7 @@ export function SiteFooter() {
           <div className="mx-auto flex items-center justify-center gap-3 border-x border-edge bg-background px-4">
             <a
               className="flex items-center text-muted-foreground transition-colors hover:text-foreground"
-              href="https://x.com/iamncdai"
+              href="https://x.com/Tej_Codes"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -47,7 +47,7 @@ export function SiteFooter() {
 
             <a
               className="flex items-center text-muted-foreground transition-colors hover:text-foreground"
-              href="https://github.com/ncdai"
+              href="https://github.com/TejaswaHinduja"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -59,7 +59,7 @@ export function SiteFooter() {
 
             <a
               className="flex items-center text-muted-foreground transition-colors hover:text-foreground"
-              href="https://www.linkedin.com/in/ncdai"
+              href="https://www.linkedin.com/in/TejaswaHinduja"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -80,19 +80,6 @@ export function SiteFooter() {
             </a>
 
             <Separator />
-
-            <a
-              className="flex text-muted-foreground transition-colors hover:text-foreground"
-              href={
-                process.env.NEXT_PUBLIC_DMCA_URL ||
-                "https://www.dmca.com/ProtectionPro.aspx"
-              }
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Icons.dmca className="h-4.5 w-auto" />
-              <span className="sr-only">DMCA.com Protection Status</span>
-            </a>
           </div>
         </div>
       </div>
