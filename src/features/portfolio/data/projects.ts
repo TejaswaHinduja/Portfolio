@@ -27,6 +27,7 @@ export const PROJECTS: Project[] = [
     Grading Assignments is one of the most time consuming part of a teachers job, teachRelief addresses this by helping teachers automate this process, Teachers can just upload their solution key and grade student submissions instantly with accurate feedback
 `,
     logo: "https://assets.chanhdai.com/images/project-logos/react-wheel-picker.svg",
+    // Add OG image screenshot: ogImage: "/assets/projects/teach-relief-og.png",
     isExpanded: true,
   },
   {

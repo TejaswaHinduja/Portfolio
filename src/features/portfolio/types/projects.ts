@@ -24,6 +24,8 @@ export type Project = {
   logo?: string;
   /** Optional preview video URL. */
   preview?: string;
+  /** Optional OG image/screenshot URL for social sharing (absolute or path under /public). */
+  ogImage?: string;
   /** Whether the project is currently running/live. */
   status?: boolean;
   /** Whether the project card is expanded by default in the UI. */
