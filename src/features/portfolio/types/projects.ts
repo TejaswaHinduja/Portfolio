@@ -14,12 +14,18 @@ export type Project = {
   };
   /** Public URL (site, repository, demo, or video). */
   link: string;
+  /** Optional GitHub repository URL. */
+  github?: string;
   /** Tags/technologies for chips or filtering. */
   skills: string[];
   /** Optional rich description; Markdown and line breaks supported. */
   description?: string;
-  /** Logo image URL (absolute or path under /public). */
+  /** Logo/image URL (absolute or path under /public). */
   logo?: string;
+  /** Optional preview video URL. */
+  preview?: string;
+  /** Whether the project is currently running/live. */
+  status?: boolean;
   /** Whether the project card is expanded by default in the UI. */
   isExpanded?: boolean;
 };
