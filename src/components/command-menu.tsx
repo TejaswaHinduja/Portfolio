@@ -9,7 +9,6 @@ import {
   BriefcaseBusinessIcon,
   CornerDownLeftIcon,
   DownloadIcon,
-  FileTextIcon,
   HeartIcon,
   LayersIcon,
   MoonStarIcon,
@@ -122,14 +121,7 @@ const SOCIAL_LINK_ITEMS: CommandLinkItem[] = SOCIAL_LINKS.map((item) => ({
   openInNewTab: true,
 }));
 
-const OTHER_LINK_ITEMS: CommandLinkItem[] = [
-  {
-    title: "llms.txt",
-    href: "/llms.txt",
-    icon: FileTextIcon,
-    openInNewTab: true,
-  },
-];
+const OTHER_LINK_ITEMS: CommandLinkItem[] = [];
 
 export function CommandMenu() {
   const router = useRouter();
@@ -332,11 +324,13 @@ export function CommandMenu() {
             </CommandItem>
           </CommandGroup>
 
-          <CommandLinkGroup
-            heading="Other"
-            links={OTHER_LINK_ITEMS}
-            onLinkSelect={handleOpenLink}
-          />
+          {OTHER_LINK_ITEMS.length > 0 && (
+            <CommandLinkGroup
+              heading="Other"
+              links={OTHER_LINK_ITEMS}
+              onLinkSelect={handleOpenLink}
+            />
+          )}
         </CommandList>
 
         <CommandMenuFooter />
