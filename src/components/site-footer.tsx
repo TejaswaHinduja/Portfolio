@@ -59,27 +59,13 @@ export function SiteFooter() {
 
             <a
               className="flex items-center text-muted-foreground transition-colors hover:text-foreground"
-              href="https://www.linkedin.com/in/TejaswaHinduja"
+              href="https://www.linkedin.com/in/tejaswa-hinduja-b585b6323/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Icons.linkedin className="size-4" />
               <span className="sr-only">LinkedIn</span>
             </a>
-
-            <Separator />
-
-            <a
-              className="flex items-center text-muted-foreground transition-colors hover:text-foreground"
-              href={`${SITE_INFO.url}/rss`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <RssIcon className="size-4" />
-              <span className="sr-only">RSS</span>
-            </a>
-
-            <Separator />
           </div>
         </div>
       </div>
