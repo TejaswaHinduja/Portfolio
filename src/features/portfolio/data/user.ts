@@ -3,7 +3,7 @@ import type { User } from "@/features/portfolio/types/user";
 export const USER = {
   firstName: "Tejaswa",
   lastName: "Hinduja",
-  displayName: "TejCodes",
+  displayName: "Tejaswa Hinduja",
   username: "Tej",
   gender: "male",
   pronouns: "he/him",
@@ -30,11 +30,10 @@ One of my key projects, [teachRelief](https://teachrelief.tejaswahinduja.me), he
 
 Let's connect and collaborate!
   `,
-  avatar: "https://assets.chanhdai.com/images/chanhdai-avatar-ghibli.webp", // TODO: Replace with your avatar URL
-  ogImage:
-    "https://assets.chanhdai.com/images/screenshot-og-image-light.png?v=4", // TODO: Replace with your OG image URL
-  namePronunciationUrl: "", // Leave empty or add your name pronunciation audio
-  timeZone: "Asia/Kolkata", // Changed to India timezone
+  avatar: "https://ik.imagekit.io/tejaswahinduja/githubpfp.jpg",
+  ogImage: "", // TODO: Replace with your OG image URL
+  namePronunciationUrl: "",
+  timeZone: "Asia/Kolkata",
   keywords: [
     "tejaswa hinduja",
     "tejcodes",
