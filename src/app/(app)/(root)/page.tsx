@@ -52,8 +52,8 @@ export default function Page() {
         <Projects />
         <Separator />
 
-        <Certifications />
-        <Separator />
+        {/* <Certifications />
+<Separator /> */}
       </div>
     </>
   );

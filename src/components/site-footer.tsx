@@ -17,9 +17,9 @@ export function SiteFooter() {
             target="_blank"
             rel="noopener"
           >
-            ncdai
+            Tejaswa Hinduja
           </a>
-          . The source code is available on{" "}
+          . The source code is available on{""}
           <a
             className="link"
             href={SOURCE_CODE_GITHUB_URL}
