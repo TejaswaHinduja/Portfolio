@@ -71,9 +71,10 @@ export const PROJECTS: Project[] = [
     id: "E-comm",
     title: "E-commerce",
     period: { start: "7-2025" },
-    link: "https://ecom-dashboard-ashy.vercel.app/dashboard",
+    link: "https://ecom-dashboard-zxii.vercel.app/dashboard",
     skills: ["React", "Tailwind CSS v4", "shadcn/ui", "NodeJs", "Express"],
     description:
       "A real-time dahsboard for e commerce sellers to track their inventory and order invoices",
+    logo: "/assets/projects/e-comm.png",
   },
 ];
