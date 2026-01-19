@@ -19,16 +19,13 @@ export function SiteFooter() {
           >
             Tejaswa Hinduja
           </a>
-          . The source code is available on{""}
+          .
           <a
             className="link"
             href={SOURCE_CODE_GITHUB_URL}
             target="_blank"
             rel="noopener"
-          >
-            GitHub
-          </a>
-          .
+          />
         </p>
 
         <div className="screen-line-before screen-line-after flex w-full before:z-1 after:z-1">

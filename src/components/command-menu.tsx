@@ -44,6 +44,7 @@ import { copyText } from "@/utils/copy";
 import { ChanhDaiMark, getMarkSVG } from "./chanhdai-mark";
 import { getWordmarkSVG } from "./chanhdai-wordmark";
 import { ComponentIcon, Icons } from "./icons";
+import { TejaswaMarkMinimal, TejaswaMarkModern } from "./tejaswa-mark";
 import { Button } from "./ui/button";
 import { Kbd, KbdGroup } from "./ui/kbd";
 import { Separator } from "./ui/separator";
@@ -62,7 +63,7 @@ const MENU_LINKS: CommandLinkItem[] = [
   {
     title: "Portfolio",
     href: "/",
-    icon: ChanhDaiMark,
+    icon: TejaswaMarkMinimal,
   },
 ];
 
@@ -72,11 +73,7 @@ const PORTFOLIO_LINKS: CommandLinkItem[] = [
     href: "/#about",
     icon: TextInitialIcon,
   },
-  {
-    title: "Testimonials",
-    href: "/#testimonials",
-    icon: QuoteIcon,
-  },
+
   {
     title: "Tech Stack",
     href: "/#stack",
@@ -92,12 +89,8 @@ const PORTFOLIO_LINKS: CommandLinkItem[] = [
     href: "/#projects",
     icon: BoxIcon,
   },
-  {
-    title: "Honors & Awards",
-    href: "/#awards",
-    icon: AwardIcon,
-  },
-  {
+
+  /*{
     title: "Certifications",
     href: "/#certs",
     icon: ShieldCheckIcon,
@@ -106,12 +99,7 @@ const PORTFOLIO_LINKS: CommandLinkItem[] = [
     title: "Bookmarks",
     href: "/#bookmarks",
     icon: BookmarkIcon,
-  },
-  {
-    title: "Download vCard",
-    href: "/vcard",
-    icon: DownloadIcon,
-  },
+  },*/
 ];
 
 const SOCIAL_LINK_ITEMS: CommandLinkItem[] = SOCIAL_LINKS.map((item) => ({
@@ -266,39 +254,6 @@ export function CommandMenu() {
             links={SOCIAL_LINK_ITEMS}
             onLinkSelect={handleOpenLink}
           />
-
-          <CommandGroup heading="Brand Assets">
-            <CommandItem
-              onSelect={() => {
-                handleCopyText(
-                  getMarkSVG(resolvedTheme === "light" ? "#000" : "#fff"),
-                  "Copied Mark as SVG"
-                );
-              }}
-            >
-              <ChanhDaiMark />
-              Copy Mark as SVG
-            </CommandItem>
-
-            <CommandItem
-              onSelect={() => {
-                handleCopyText(
-                  getWordmarkSVG(resolvedTheme === "light" ? "#000" : "#fff"),
-                  "Copied Logotype as SVG"
-                );
-              }}
-            >
-              <TypeIcon />
-              Copy Logotype as SVG
-            </CommandItem>
-
-            <CommandItem asChild>
-              <a href="https://assets.chanhdai.com/chanhdai-brand.zip" download>
-                <DownloadIcon />
-                Download Brand Assets
-              </a>
-            </CommandItem>
-          </CommandGroup>
 
           <CommandGroup heading="Theme">
             <CommandItem
