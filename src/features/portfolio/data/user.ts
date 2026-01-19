@@ -7,8 +7,8 @@ export const USER = {
   username: "Tej",
   gender: "male",
   pronouns: "he/him",
-  bio: "Creating with code. Small details matter.",
-  flipSentences: ["Creating with code. Small details matter.", "Engineer"],
+  bio: "Creating with code. Building Smart Web Apps.",
+  flipSentences: ["Building Smart Web Apps.", "Engineer"],
   address: "New Delhi, India",
   phoneNumber: "KzkxOTg2ODIxNDAzNQ==", // E.164 format (+919868214035), base64 encoded
   email: "dGVqYXN3YWhpbmR1amFAZ21haWwuY29t", // tejaswahinduja@gmail.com base64 encoded
