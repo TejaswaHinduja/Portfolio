@@ -26,7 +26,7 @@ export const PROJECTS: Project[] = [
     description: `Helping educators automate the grading process using AI.
     Grading Assignments is one of the most time consuming part of a teachers job, teachRelief addresses this by helping teachers automate this process, Teachers can just upload their solution key and grade student submissions instantly with accurate feedback
 `,
-    logo: "https://assets.chanhdai.com/images/project-logos/react-wheel-picker.svg",
+    logo: "/assets/projects/teach-relief.png",
     // Add OG image screenshot: ogImage: "/assets/projects/teach-relief-og.png",
     isExpanded: true,
   },
@@ -48,7 +48,7 @@ export const PROJECTS: Project[] = [
     ],
     description:
       "It is an AI powered Twitter bot, Helps Users in crafting their raw thoughts into well crafted tweets",
-    logo: "https://assets.chanhdai.com/images/project-logos/chanhdaidotcom.svg",
+    logo: "/assets/projects/TAISR.png",
     isExpanded: true,
   },
   {
@@ -61,7 +61,7 @@ export const PROJECTS: Project[] = [
     skills: ["React", "Tailwind CSS v4", "shadcn/ui", "NodeJs", "Express"],
     description:
       "A real-time chat application built with React and Node.js. Features include instant messaging, user authentication, and responsive design for seamless communication across devices.",
-    logo: "https://assets.chanhdai.com/images/project-logos/quaricdotcom.svg",
+    logo: "/assets/projects/WeChat.png",
     isExpanded: true,
   },
 ];
