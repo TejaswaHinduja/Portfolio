@@ -142,9 +142,7 @@ export default function RootLayout({
 
       <body>
         <Providers>
-          <NuqsAdapter>
-            <ConsentManager>{children}</ConsentManager>
-          </NuqsAdapter>
+          <NuqsAdapter>{children}</NuqsAdapter>
         </Providers>
       </body>
     </html>
