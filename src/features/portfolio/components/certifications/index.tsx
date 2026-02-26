@@ -9,7 +9,7 @@ export function Certifications() {
     <Panel id="certs">
       <PanelHeader>
         <PanelTitle>
-          Certifications
+          Blogs
           <PanelTitleSup>({CERTIFICATIONS.length})</PanelTitleSup>
         </PanelTitle>
       </PanelHeader>

@@ -1,6 +1,6 @@
 export type Certification = {
   title: string;
-  issuer: string;
+  issuer?: string;
   /**
    * Issuer logo to display (takes precedence over `issuerIconName`).
    * Provide an absolute URL or a path under /public.
@@ -14,13 +14,13 @@ export type Certification = {
   /**
    * Issue date in ISO format (YYYY-MM-DD). Parsed and formatted in the UI via Day.js.
    */
-  issueDate: string;
+  issueDate?: string;
   /**
    * Certificate or credential identifier; leave empty if not applicable.
    */
-  credentialID: string;
+  credentialID?: string;
   /**
    * Public verification URL or link to the certificate document. Used as the anchor href.
    */
-  credentialURL: string;
+  URL: string;
 };
