@@ -19,4 +19,10 @@ export const SOCIAL_LINKS: SocialLink[] = [
     description: "TejaswaHinduja",
     href: "https://www.linkedin.com/in/tejaswa-hinduja-b585b6323/",
   },
+  {
+    icon: "https://d2fltix0v2e0sb.cloudfront.net/dev-black.png",
+    title: "Blogs-Dev.to",
+    description: "TejaswaHinduja",
+    href: "https://dev.to/tejaswahinduja",
+  },
 ];
