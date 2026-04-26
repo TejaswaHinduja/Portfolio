@@ -33,6 +33,29 @@ export const PROJECTS: Project[] = [
     isExpanded: true,
   },
   {
+    id: "WatchParty",
+    title: "WatchParty",
+    period: {
+      start: "03.2026",
+    },
+    link: "https://watchparty.tejaswahinduja.me",
+    skills: [
+      "NextJs",
+      "Express",
+      "NodeJs",
+      "WebSockets",
+      "Socket.io",
+      "PostgreSQL",
+      "Prisma",
+      "TailwindCSS",
+      "ShadCn",
+    ],
+    description:
+      "Watch Youtube Videos with your friends , Real-time sync across all users,Create/Join a room Host controls the playback and Enjoy!",
+    logo: "/assets/projects/watchparty.png",
+    isExpanded: true,
+  },
+  {
     id: "TAISR",
     title: "TAISR",
     period: {
