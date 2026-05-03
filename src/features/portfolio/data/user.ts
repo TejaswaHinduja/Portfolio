@@ -16,7 +16,7 @@ export const USER = {
   jobTitle: "Engineer",
   jobs: [
     {
-      title: "Full Stack Developer ",
+      title: "Software Developer ",
       company: "",
       website: "",
     },
@@ -31,7 +31,7 @@ One of my key projects, [teachRelief](https://teachrelief.tejaswahinduja.me), he
 Let's connect and collaborate!
   `,
   avatar: "https://ik.imagekit.io/tejaswahinduja/githubpfp.jpg",
-  ogImage: "", // TODO: Replace with your OG image URL
+  ogImage: "", // add OG img
   namePronunciationUrl: "",
   timeZone: "Asia/Kolkata",
   keywords: [
@@ -45,5 +45,5 @@ Let's connect and collaborate!
     "nextjs developer",
     "teachrelief",
   ],
-  dateCreated: "2025-01-06", // YYYY-MM-DD - Update with your actual portfolio creation date
+  dateCreated: "2025-01-06",
 } satisfies User;
