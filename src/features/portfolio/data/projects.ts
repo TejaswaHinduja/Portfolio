@@ -52,7 +52,7 @@ export const PROJECTS: Project[] = [
     ],
     description:
       "Watch Youtube Videos with your friends , Real-time sync across all users,Create/Join a room Host controls the playback and Enjoy!",
-    logo: "/assets/projects/watchparty.png",
+    logo: "assets/projects/watchparty.png",
     isExpanded: true,
   },
   {
