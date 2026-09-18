@@ -2,12 +2,12 @@ import type { Certification } from "../types/certifications";
 
 export const CERTIFICATIONS: Certification[] = [
   {
-    title: "Building a rate limiter, Why even use Redis",
+    title: "BUILDING A RATE LIMITER , WHY EVEN USE REDIS",
     issueDate: "12.09.2026",
     URL: "https://dev.to/tejaswahinduja/building-a-rate-limiter-why-even-use-redis-20b4",
   },
   {
-    title: "Understanding how browsers load web pages, CSR,SSR,SSG,ISR",
+    title: "UNDERSTANDING HOW BROWSERS RENDER WEB PAGES. CSR , SSR , SSG , ISR",
     issueDate: "1,08.2026",
     URL: "https://dev.to/tejaswahinduja/how-browsers-render-websites-understanding-csr-ssr-ssg-and-isr-2763",
   },
