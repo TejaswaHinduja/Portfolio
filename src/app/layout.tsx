@@ -9,11 +9,9 @@ import { ConsentManager } from "@/components/consent-manager";
 import { Providers } from "@/components/providers";
 import { META_THEME_COLORS, SITE_INFO } from "@/config/site";
 import { USER } from "@/features/portfolio/data/user";
-import {
-  getAllProjectOgImages,
-  getDefaultProjectOgImage,
-} from "@/features/portfolio/utils/og-image";
 import { fontMono, fontSans } from "@/lib/fonts";
+
+const portfolioOgImage = `/og/simple?title=${encodeURIComponent(SITE_INFO.name)}`;
 
 function getWebSiteJsonLd(): WithContext<WebSite> {
   return {
@@ -66,40 +64,19 @@ export const metadata: Metadata = {
     lastName: USER.lastName,
     username: USER.username,
     gender: USER.gender,
-    images: (() => {
-      const projectImages = getAllProjectOgImages();
-      // Use project images if available, otherwise fallback to default
-      if (projectImages.length > 0) {
-        return projectImages.map((url) => ({
-          url: url.startsWith("http") ? url : `${SITE_INFO.url}${url}`,
-          width: 1200,
-          height: 630,
-          alt: SITE_INFO.name,
-        }));
-      }
-      // Fallback to default OG image
-      return [
-        {
-          url: SITE_INFO.ogImage,
-          width: 1200,
-          height: 630,
-          alt: SITE_INFO.name,
-        },
-      ];
-    })(),
+    images: [
+      {
+        url: portfolioOgImage,
+        width: 1200,
+        height: 630,
+        alt: SITE_INFO.name,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     creator: "@iamncdai", // Twitter username
-    images: (() => {
-      const projectImage = getDefaultProjectOgImage();
-      const imageUrl = projectImage.startsWith("http")
-        ? projectImage
-        : `${SITE_INFO.url}${projectImage}`;
-      return projectImage !== SITE_INFO.ogImage
-        ? [imageUrl]
-        : [SITE_INFO.ogImage];
-    })(),
+    images: [portfolioOgImage],
   },
   // Icons are handled by icon.tsx file in the app directory
 };
