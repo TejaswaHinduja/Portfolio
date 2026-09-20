@@ -28,7 +28,7 @@ export const SOURCE_CODE_GITHUB_URL = "";
 export const SPONSORSHIP_URL = "";
 
 export const UTM_PARAMS = {
-  utm_source: "chanhdai.com",
+  utm_source: "",
   utm_medium: "referral",
   utm_campaign: "portfolio",
 };
