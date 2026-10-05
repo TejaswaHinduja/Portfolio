@@ -4,7 +4,7 @@ export const EXPERIENCES: Experience[] = [
   {
     id: "synciq",
     companyName: "SyncIq",
-    companyLogo: "",
+    companyLogo: "https://assets.chanhdai.com/images/companies/simplamo.webp",
     positions: [
       {
         id: "20f8bfe5-b6a3-4b0d-ac2f-6fccd50d417e",
