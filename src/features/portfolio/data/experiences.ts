@@ -17,11 +17,11 @@ export const EXPERIENCES: Experience[] = [
         icon: "code",
         description: `- Developed a webscraping pipeline to extract and process unstructured content from websites, transforming scraped
 data into structured Markdown for down stream consumption.
--IntegratedLLM-basedcontent structuring to convert noisy scraped data into consistent, readable documents with
+- IntegratedLLM-basedcontent structuring to convert noisy scraped data into consistent, readable documents with
 standardized formatting.
--Built a Markdown document viewerusing Next.js to dynamically fetch and render processed content.
--Developed Fast API endpoints for retrieving document metadata and structured content,enabling seamless integration
-between the processing pipeline and frontend viewer`,
+- Built a Markdown document viewerusing Next.js to dynamically fetch and render processed content.
+- Developed Fast API endpoints for retrieving document metadata and structured content,enabling seamless integration
+between the processing pipeline and frontend viewer.`,
         skills: [
           "TypeScript",
           "Next.js",
@@ -48,7 +48,7 @@ between the processing pipeline and frontend viewer`,
         employmentType: "Intern",
         icon: "code",
         description: `- Develop Authentication and Onboarding flow for the sellers.
-- Develop interactive chart and analytics widgets for the [Dashboard] to enhance data visualization.
+- Develop interactive chart and analytics widgets for the Dashboard to enhance data visualization.
 - Develop and maintain core features to enhance functionality and user experience.
 - Ensure UI/UX consistency and adherence to standards.
 - Implement robust frontend solutions for web platform.
