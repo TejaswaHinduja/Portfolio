@@ -31,7 +31,7 @@ One of my key projects, [teachRelief](https://teachrelief.tejaswahinduja.me), he
 Let's connect and collaborate!
   `,
   avatar: "https://ik.imagekit.io/tejaswahinduja/githubpfp.jpg",
-  ogImage: "", // add OG img
+  ogImage: "https://ik.imagekit.io/tejaswahinduja/githubpfp.jpg", // add OG img
   namePronunciationUrl: "",
   timeZone: "Asia/Kolkata",
   keywords: [
