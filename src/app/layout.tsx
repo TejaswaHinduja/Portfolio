@@ -75,7 +75,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    creator: "@iamncdai", // Twitter username
+    creator: "@Tej_Codes", // Twitter username
     images: [portfolioOgImage],
   },
   // Icons are handled by icon.tsx file in the app directory

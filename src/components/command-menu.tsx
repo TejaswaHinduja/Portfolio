@@ -41,7 +41,6 @@ import { useSound } from "@/hooks/use-sound";
 import { trackEvent } from "@/lib/events";
 import { copyText } from "@/utils/copy";
 
-import { getWordmarkSVG } from "./chanhdai-wordmark";
 import { ComponentIcon, Icons } from "./icons";
 import { TejaswaMarkMinimal, TejaswaMarkModern } from "./tejaswa-mark";
 import { Button } from "./ui/button";
